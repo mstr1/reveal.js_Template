@@ -10,9 +10,12 @@ section.has-light-background, section.has-light-background h1, section.has-light
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
+
 body {
-  background: #222;
-  background-color: #222; }
+  background-image: radial-gradient(ellipse farthest-corner at right top, #FFFFFF -100%, rgb(199, 198, 198) 10%, rgb(39, 38, 38) 100%);
+	font-family: Arial;
+	font-weight: bolder;
+}
 
 .reveal {
   font-family: "Source Sans Pro", Helvetica, sans-serif;
