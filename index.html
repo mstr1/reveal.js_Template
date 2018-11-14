@@ -265,7 +265,7 @@
 		Reveal.addEventListener( 'slidechanged', function( event ) {
 			$(".slide-title").html($("h1").html());
 			var horzSlideCnt = document.querySelectorAll( '.reveal .slides>section' ).length;
-			var slideCount = $('.reveal .slides>section' ).length;
+			var slideCount = $('section' ).length;
 			console.log(event.indexh + ', ' + event.indexv);
 			console.log(Reveal.getState());
 			console.log(slideCount + ', ' + horzSlideCnt);
