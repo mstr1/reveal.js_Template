@@ -269,10 +269,10 @@
 			$(".slide-title").html($("h1").html());
 			var horzSlideCnt = document.querySelectorAll( '.reveal .slides>section' ).length;
 			var slideCount = $('section' ).length;
-			//var sectionwithchild = $('section').find('section').length > 0 ? 1 : 0);
+			var sectionwithchild = $('section').find('section').length;
 			console.log(event.indexh + ', ' + event.indexv);
 			console.log(Reveal.getState());
-			//console.log(slideCount + ', ' + horzSlideCnt + ', ' + sectionwithchild);
+			console.log(slideCount + ', ' + horzSlideCnt + ', ' + sectionwithchild);
 		    // event.previousSlide, event.currentSlide, event.indexh, event.indexv
 		    if(event.indexh>0){
 		    	var slideNumber = "";
