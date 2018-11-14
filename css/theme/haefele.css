@@ -9,7 +9,7 @@
  * GLOBAL STYLES
  *********************************************/
 body {
-  background-image: radial-gradient(ellipse farthest-corner at right top, #FFFFFF -100%, #FF6F6F 10%, #FF0000 100%);
+  background-image: radial-gradient(ellipse farthest-corner at right top, #FFFFFF -100%, rgb(199, 198, 198) 10%, rgb(39, 38, 38) 100%);
 	font-family: Arial;
 	font-weight: bolder;
 	}
