@@ -225,7 +225,30 @@
 						</a>
 					</section>
 				</section>
+				
+				<section>
+					<section>
+						<h2>Vertical Slides New</h2>
+						<p>Slides can be nested inside of each other.</p>
+						<p>Use the <em>Space</em> key to navigate through all slides.</p>
+						<br>
+						<a href="#" class="navigate-down">
+							<img data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+						</a>
+					</section>
+					<section>
+						<h2>Basement Level New/1</h2>
+						<p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
+					</section>
+				</section>
 
+				<section>
+					<h2>Slides</h2>
+					<p>
+						Not a coder? Not a problem. There's a fully-featured visual editor for authoring these, try it out at <a href="https://slides.com" target="_blank">https://slides.com</a>.
+					</p>
+</section>
+				
 				<section>
 					<h2>Slides</h2>
 					<p>
@@ -269,7 +292,7 @@
 			$(".slide-title").html($("h1").html());
 			var horzSlideCnt = document.querySelectorAll( '.reveal .slides>section' ).length;
 			var slideCount = $('section' ).length;
-			var sectionwithchild = $('section').find('section').length;
+			var sectionwithchild = $('section section').length;
 			console.log(event.indexh + ', ' + event.indexv);
 			console.log(Reveal.getState());
 			console.log(slideCount + ', ' + horzSlideCnt + ', ' + sectionwithchild);
