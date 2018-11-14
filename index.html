@@ -265,8 +265,11 @@ u----
 		// Fires each time a new slide is activated
 		Reveal.addEventListener( 'slidechanged', function( event ) {
 			$(".slide-title").html($("h1").html());
+			var horzSlideCnt = document.querySelectorAll( '.reveal .slides>section' ).length;
+			var slideCount = $('.reveal .slides>section' ).length;
 			console.log(event.indexh + ', ' + event.indexv);
 			console.log(Reveal.getState());
+			console.log(slideCount + ', ' + horzSlideCnt);
 		    // event.previousSlide, event.currentSlide, event.indexh, event.indexv
 		    if(event.indexh>0){
 		    	var slideNumber = "";
