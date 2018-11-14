@@ -172,13 +172,13 @@
 <!-- Titelblatt -->
 <section data-markdown data-separator="!---" data-vertical="u---" class="titlePage">
 <script type="text/template">
-# TITLE OF ITINERAY #
+# TITLE of ITINERAY #
 
 -----
 
 #### Subtitle: ####
 
-### Theme by MS  ###
+### Theme by MS ###
 
 -----
 
@@ -281,6 +281,7 @@
 		
 		<script>
 		$(".staticElements").hide();
+		var slideCount = $('section' ).length - $('section section:first-child').length;
 		
 		Reveal.addEventListener( 'ready', function( event ) {
 		    // event.currentSlide, event.indexh, event.indexv
@@ -290,12 +291,9 @@
 		// Fires each time a new slide is activated
 		Reveal.addEventListener( 'slidechanged', function( event ) {
 			$(".slide-title").html($("h1").html());
-			var horzSlideCnt = document.querySelectorAll( '.reveal .slides>section' ).length;
-			var slideCount = $('section' ).length;
-			var sectionwithchild = $('section section:first-child').length;
 			console.log(event.indexh + ', ' + event.indexv);
 			console.log(Reveal.getState());
-			console.log(slideCount + ', ' + horzSlideCnt + ', ' + sectionwithchild);
+			console.log(slideCount);
 		    // event.previousSlide, event.currentSlide, event.indexh, event.indexv
 		    if(event.indexh>0){
 		    	var slideNumber = "";
