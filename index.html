@@ -172,7 +172,7 @@
 <!-- Titelblatt -->
 <section data-markdown data-separator="!---" data-vertical="u---" class="titlePage">
 <script type="text/template">
-# TITLE OF PRESENTATION #
+# TITLE OF ITINERAY #
 
 -----
 
@@ -292,7 +292,7 @@
 			$(".slide-title").html($("h1").html());
 			var horzSlideCnt = document.querySelectorAll( '.reveal .slides>section' ).length;
 			var slideCount = $('section' ).length;
-			var sectionwithchild = $('section section').length;
+			var sectionwithchild = $('section section:first-child').length;
 			console.log(event.indexh + ', ' + event.indexv);
 			console.log(Reveal.getState());
 			console.log(slideCount + ', ' + horzSlideCnt + ', ' + sectionwithchild);
