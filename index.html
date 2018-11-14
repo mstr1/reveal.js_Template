@@ -266,6 +266,7 @@ u----
 		Reveal.addEventListener( 'slidechanged', function( event ) {
 			$(".slide-title").html($("h1").html());
 			console.log(event.indexh + ', ' + event.indexv);
+			console.log(Reveal.getState());
 		    // event.previousSlide, event.currentSlide, event.indexh, event.indexv
 		    if(event.indexh>0){
 		    	var slideNumber = "";
