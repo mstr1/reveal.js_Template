@@ -301,6 +301,12 @@
 		<!-- <script src="js/jquery-2.0.2.min.js"></script> -->
 		
 		<script>
+		var urlParams = new URLSearchParams(window.location.search);
+		console.log(urlParams.has('master')); // true
+		var role = urlParams.has('master');
+		role = role ? 'master' : 'client';
+		conslode.log(role);
+			
 		$(".staticElements").hide();
 		var slideCount = $('section' ).length - $('section section:first-child').length;
 		
