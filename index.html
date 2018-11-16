@@ -374,6 +374,7 @@
 			console.log(event.indexh + ', ' + event.indexv);
 			console.log(Reveal.getState());
 			console.log(slideCount);
+			console.log(Reveal.getTotalSlides()); 
 		    // event.previousSlide, event.currentSlide, event.indexh, event.indexv
 		    if(event.indexh>0){
 		    	var slideNumber = "";
@@ -404,10 +405,13 @@
 				history: true,
 				center: true,
 				slideNumber: true,
+				viewDistance: 10,
+				previewLinks: true,
+				loop: false,
 
 				width: 1300,
 			    height: 900,
-			    margin: 0.15,
+			    margin: 0.10,
 			    
 				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
 				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
