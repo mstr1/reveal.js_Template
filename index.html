@@ -162,7 +162,7 @@
 	<footnote>MS</footnote>
 	</div>
 	<div class="footR">
-	<footnote># <text class="slide-number"></text></footnote>
+	<footnote><text class="slide-number"></text></footnote>
 	</div>
 </div>
 			<!-- Any section element inside of this container is displayed as a slide -->
@@ -403,6 +403,7 @@
 				progress: true,
 				history: true,
 				center: true,
+				slideNumber: true,
 
 				width: 1300,
 			    height: 900,
@@ -410,7 +411,16 @@
 			    
 				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
 				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
-
+			    menu: {
+					numbers: true,
+					openSlideNumber: true,
+					themes: true,
+					themesPath: 'lib/reveal.js/css/theme/',
+					transitions: true,
+			        custom: [
+			            { title: 'Custom', icon: '<i class="fa fa-bookmark">', src: 'links.html' },
+			        ]
+				},
 				// Optional libraries used to extend on reveal.js
 				dependencies: [
 					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
@@ -425,8 +435,5 @@
 			});
 		</script>
 
-		<script>
-			Reveal.configure({ slideNumber: 'c/t' });
-		</script>
 	</body>
 </html>
