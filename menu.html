@@ -133,6 +133,23 @@
 		.titlePage {
 			text-align: center;
 		}
+					
+		#photos {
+   /* Prevent vertical gaps */
+   line-height: 0;
+   -webkit-column-count: 5;
+   -webkit-column-gap:   0px;
+   -moz-column-count:    5;
+   -moz-column-gap:      0px;
+   column-count:         5;
+   column-gap:           0px;
+}
+
+#photos img {
+  /* Just in case there are inline attributes */
+  width: 100% !important;
+  height: auto !important;
+}
 		
 		</style>
 
@@ -263,7 +280,14 @@
 					<section data-background="http://i.giphy.com/90F8aUepslB84.gif" id="gif" data-menu-title="gif">
 						<h2>... and GIFs!</h2>
 </section>
-	
+		<section>
+				<div id="photos-coll">
+					<img src="https://placekitten.com/322/229" alt="pretty kitty">
+					<img src="https://placekitten.com/290/253" alt="pretty kitty">
+					<img src="https://placekitten.com/393/381" alt="pretty kitty">
+					<img src="https://placekitten.com/315/230" alt="pretty kitty">
+				</div>
+		</section>
 
             <section>
                 <div class="sl-block" data-block-type="text" style="width: 384px; left: 48px; top: 105px; height: auto;">
