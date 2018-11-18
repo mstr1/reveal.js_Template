@@ -134,7 +134,15 @@
 			text-align: center;
 		}
 					
+		.rowx {
+			    display: flex;
+			}
 
+		/* Create three equal columns that sits next to each other */
+		.columnx {
+		    flex: 50%;
+		    padding: 5px;
+		}
 		
 		</style>
 
@@ -239,8 +247,8 @@
 						</a>
 					</section>
 					<section>
-						<h2>Next slide down</h2>
 						<section>
+							<h2>Next slide down</h2>	
 							<h3>Left or Right</h3>
 							<p>You can configure the menu to slide in from the left or right</p>
 						</section>
@@ -265,12 +273,24 @@
 						<h2>... and GIFs!</h2>
 </section>
 		<section id="cats" data-menu-title="Cats">
-				<div id="collphotos" style="padding-bottom:20px; margin-bottom:20px;">
-					<img src="https://placekitten.com/322/229" alt="pretty kitty">
-					<img src="https://placekitten.com/290/253" alt="pretty kitty">
-					<img src="https://placekitten.com/393/381" alt="pretty kitty">
-					<img src="https://placekitten.com/315/230" alt="pretty kitty">
-				</div>
+			<p>How to create side-by-side images with CSS Flexbox:</p>
+
+						<div class="rowx">
+						  <div class="columnx">
+						    <img src="https://placekitten.com/322/229" alt="Snow" style="width:100%">
+						  </div>
+						  <div class="columnx">
+						    <img src="https://placekitten.com/322/229" alt="Forest" style="width:100%">
+						  </div>
+						</div>
+						<div class="rowx">
+						<div class="columnx">
+						    <img src="https://placekitten.com/322/229" alt="Forest" style="width:100%">
+						  </div>
+						  <div class="columnx">
+						    <img src="https://placekitten.com/322/229" alt="Mountains" style="width:100%">
+						  </div>
+						 </div>
 		</section>
 
             <section>
