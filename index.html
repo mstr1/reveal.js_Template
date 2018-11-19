@@ -359,6 +359,9 @@
 		var role = urlParams.has('master');
 		role = role ? 'master' : 'client';
 		console.log(role);
+		
+		var socketSecret = (role === 'master') ? "15426203561536779840" : "";
+		console.log(socketSecret);
 			
 		$(".staticElements").hide();
 		var slideCount = $('section' ).length - $('section section:first-child').length;
@@ -409,7 +412,7 @@
 				previewLinks: true,
 				loop: false,
 				multiplex: {
-          secret: "15426203561536779840",
+          secret: socketSecret,
           id: "45c95c93a63255cd",
           url: 'https://reveal-js-multiplex-ccjbegmaii.now.sh'
         },
